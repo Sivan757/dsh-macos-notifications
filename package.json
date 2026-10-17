@@ -1,7 +1,7 @@
 {
   "name": "dsh-macos-notifications",
   "description": "Six native macOS notification switches for DeepSeek Harness Desktop: approvals, questions, task completion, subtasks, errors, and turn end.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "license": "MIT",
   "engines": {
