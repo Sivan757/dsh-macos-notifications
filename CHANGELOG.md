@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.3](https://github.com/Sivan757/dsh-macos-notifications/compare/dsh-macos-notifications-v0.2.2...dsh-macos-notifications-v0.2.3) (2026-10-17)
+
+
+### Bug Fixes
+
+* skip a publish npm already carries ([b3ebb49](https://github.com/Sivan757/dsh-macos-notifications/commit/b3ebb49eb9dba6a3bf96688d54ddd14b9035f4fe))
+
+
+### Miscellaneous Chores
+
+* **release:** pin this release to 0.2.3 ([2831f2c](https://github.com/Sivan757/dsh-macos-notifications/commit/2831f2c904269eb128cc528ac2c286e28cdab229))
+
 ## [0.2.2](https://github.com/Sivan757/dsh-macos-notifications/compare/dsh-macos-notifications-v0.2.1...dsh-macos-notifications-v0.2.2) (2026-10-17)
 
 
