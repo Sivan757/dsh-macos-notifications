@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/Sivan757/dsh-macos-notifications/compare/dsh-macos-notifications-v0.2.3...dsh-macos-notifications-v0.2.4) (2026-10-17)
+
+
+### Miscellaneous Chores
+
+* **release:** pin this release to 0.2.4 ([19af17b](https://github.com/Sivan757/dsh-macos-notifications/commit/19af17bad5ba32f89615482986d33d9f2e7b2032))
+
 ## [0.2.3](https://github.com/Sivan757/dsh-macos-notifications/compare/dsh-macos-notifications-v0.2.2...dsh-macos-notifications-v0.2.3) (2026-10-17)
 
 
