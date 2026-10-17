@@ -1,0 +1,90 @@
+{
+  "name": "dsh-macos-notifications",
+  "description": "Six native macOS notification switches for DeepSeek Harness Desktop: approvals, questions, task completion, subtasks, errors, and turn end.",
+  "version": "0.2.1",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.17.0",
+  "main": "./lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sivan757/dsh-macos-notifications.git"
+  },
+  "homepage": "https://github.com/Sivan757/dsh-macos-notifications#readme",
+  "bugs": {
+    "url": "https://github.com/Sivan757/dsh-macos-notifications/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "macos",
+    "desktop"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.js",
+    "test:built": "node --test test/bundle.test.js",
+    "check:host-support": "node scripts/check-host-support.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:refactor": "pnpm run check:host-support && pnpm run format:check",
+    "pretest": "pnpm run check:refactor",
+    "prepack": "pnpm run check:refactor && pnpm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    },
+    "catalog": {
+      "category": "tool",
+      "summary": {
+        "en": "Native macOS notifications with six event switches and session navigation.",
+        "zh": "六类事件开关，原生 macOS 通知，点击返回对应会话。"
+      }
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4",
+    "@deepseek-ai/dsh-host-webserver": ">=0.2.0-rc.2 <0.3.0-0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.4",
+    "@deepseek-ai/dsh-client-modules": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-primitives": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-host-webserver": "0.2.1-rc.2",
+    "prettier": "^3.6.2"
+  }
+}

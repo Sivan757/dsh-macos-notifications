@@ -1,0 +1,8 @@
+node_modules/
+lib/ except the build output rule below is not: lib is generated, so it is ignored
+/lib/
+*.tgz
+.DS_Store
+*.local.*
+.idea/
+pnpm-debug.log*
