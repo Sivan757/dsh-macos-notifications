@@ -1,5 +1,5 @@
 node_modules/
-lib/ except the build output rule below is not: lib is generated, so it is ignored
+# Build output. Anchored: a bare `lib/` would also match a nested directory of that name.
 /lib/
 *.tgz
 .DS_Store
