@@ -1,3 +1,7 @@
+# Native build scripts need an explicit decision: pnpm fails an install it cannot classify,
+# and koffi ships prebuilt binaries that this repository never rebuilds.
+allowBuilds:
+  koffi: false
 minimumReleaseAgeExclude:
   - '@deepseek-ai/cosmokit@1.8.6'
   - '@deepseek-ai/dsh-client-modules@0.2.1-rc.2'
