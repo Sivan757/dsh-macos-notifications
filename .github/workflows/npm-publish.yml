@@ -23,6 +23,8 @@ on:
       - '.release-please-*'
       - 'README.md'
       - 'README.zh.md'
+      # Test-only edits do not change the published artifact.
+      - 'test/**'
 
 permissions:
   contents: write
