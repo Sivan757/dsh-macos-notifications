@@ -69,13 +69,6 @@
         "@deepseek-ai/dsh-client-ui-workspace",
         "@deepseek-ai/dsh-client-locale"
       ]
-    },
-    "catalog": {
-      "category": "tool",
-      "summary": {
-        "en": "Native macOS notifications with six event switches and session navigation.",
-        "zh": "六类事件开关，原生 macOS 通知，点击返回对应会话。"
-      }
     }
   },
   "peerDependencies": {
